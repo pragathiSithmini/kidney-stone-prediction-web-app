@@ -1,0 +1,7 @@
+{
+    "clientID": "WWsfwqSsr2jwH1u2yxXjYLaC3_wa",
+    "baseUrl": "https://api.asgardeo.io/t/nephrolithiasisprediction",
+    "signInRedirectURL": "https://c247297f-16be-4aa5-b81a-73691681c65d.e1-us-east-azure.choreoapps.dev",
+    "signOutRedirectURL": "https://c247297f-16be-4aa5-b81a-73691681c65d.e1-us-east-azure.choreoapps.dev",
+    "scope": ["profile email"]
+}
