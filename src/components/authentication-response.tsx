@@ -40,7 +40,7 @@ export const AuthenticationResponse: FunctionComponent<AuthenticationResponsePro
         setError('');
 
         // Prepare API request
-        const url = new URL('https://ae7b9086-12f4-4ec7-9d8a-cb4ca22d2e79-prod.e1-us-east-azure.choreoapis.dev/default/kidney-stone-predictio-ki/v1/predict');
+        const url = new URL('https://fcdf8c22-fc50-4b45-94ed-2143e9bc4668-prod.e1-us-east-azure.choreoapis.dev/default/kidneyguardian-api/v1/predict');
         url.searchParams.append('param1', formData.gravity);
         url.searchParams.append('param2', formData.ph);
         url.searchParams.append('param3', formData.osmo);
@@ -50,7 +50,7 @@ export const AuthenticationResponse: FunctionComponent<AuthenticationResponsePro
 
         const headers = {
             accept: 'application/json',
-                'Authorization': 'Bearer eyJ4NXQiOiJiOUZwNkNuTmYtSENOdDBRY1MydnQ3eUN3U00iLCJraWQiOiJNbVprWlRneE1Ua3lOMkV6WVRBNFlqZzVNMkpsWldFM016Tm1NelE0WkRVd01qQXdNRFZpTTJRellUZ3hOalkxWkRCaE1HVTNaR0UzT0RRNVpEQTVPQV9SUzI1NiIsInR5cCI6ImF0K2p3dCIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJyb1p6NUNYNTdjcG1Dc3RuZUQ2NU1Odko0NzBhIiwiYXV0IjoiQVBQTElDQVRJT04iLCJhdWQiOlsicm9aejVDWDU3Y3BtQ3N0bmVENjVNTnZKNDcwYSIsImNob3JlbzpkZXBsb3ltZW50OnByb2R1Y3Rpb24iXSwibmJmIjoxNzQyMTI0NjcyLCJhenAiOiJyb1p6NUNYNTdjcG1Dc3RuZUQ2NU1Odko0NzBhIiwib3JnX2lkIjoiYWU3YjkwODYtMTJmNC00ZWM3LTlkOGEtY2I0Y2EyMmQyZTc5IiwiaXNzIjoiaHR0cHM6XC9cL2FwaS5hc2dhcmRlby5pb1wvdFwva2lkbmV5c3RvbmVwcmVkaWN0aW9uXC9vYXV0aDJcL3Rva2VuIiwiZXhwIjoxNzc4MTI0NjcyLCJvcmdfbmFtZSI6ImtpZG5leXN0b25lcHJlZGljdGlvbiIsImlhdCI6MTc0MjEyNDY3MiwianRpIjoiZDMwNmFmYTUtOTczNC00MjY2LWIxZTctYTU3MmYyYTQzMGYwIiwiY2xpZW50X2lkIjoicm9aejVDWDU3Y3BtQ3N0bmVENjVNTnZKNDcwYSJ9.eOYEEj5SoujKBqO_c5YIqc2f_juKb0SuJsJtVvz9fdsUPFixCoZXDhX5MIBua_QY39pgDIKnXKxiJjdp8t-75rKjggNYpCxAFH70JZfcM1A0P8UIyeZXZe3Okiz5ju0ttg52gkylMGb4dfeqDBMKJdTWMKGtNVXPrlkwMMuKsWQQSwXc6MuUVqgPnAD_3lOHqoGEo3_zW7O0wO79XMLxQcSv2uiYiblGfnXE1PtfdtZeLGDkz_nTzXxUDwrGm8aZc6COHZDVl-IpQprDpm4S_UQtkNF0oSnJCODCKmb6u0SCtJJzOQ7INEPaQ55TxYANfzkgWPa2MhNiCrq6j3MRUQ'
+                'Authorization': 'Bearer eyJ4NXQiOiJrZ3BveUxkUW4wYllJX0xuNUR2bU9ZUmlRTzgiLCJraWQiOiJOR0k0TVRRek9XUmtOakk0WVdFM01tSTFPV1prTWpnNFlqVmlZVE00WVRjMU5USTJObUUyWVRBeVpEUXdNbU5rWW1ZMU9ETTBNR1EzT1dSaE1ERmtOUV9SUzI1NiIsInR5cCI6ImF0K2p3dCIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJkVDRkdXBwNmZERGZIZkEzYWJ4NjAyc2ZmZ1lhIiwiYXV0IjoiQVBQTElDQVRJT04iLCJhdWQiOlsiZFQ0ZHVwcDZmRERmSGZBM2FieDYwMnNmZmdZYSIsImNob3JlbzpkZXBsb3ltZW50OnByb2R1Y3Rpb24iXSwibmJmIjoxNzQzMjM1Njc5LCJhenAiOiJkVDRkdXBwNmZERGZIZkEzYWJ4NjAyc2ZmZ1lhIiwib3JnX2lkIjoiZmNkZjhjMjItZmM1MC00YjQ1LTk0ZWQtMjE0M2U5YmM0NjY4IiwiaXNzIjoiaHR0cHM6XC9cL2FwaS5hc2dhcmRlby5pb1wvdFwva2lkbmV5Z3VhcmRpYW5cL29hdXRoMlwvdG9rZW4iLCJleHAiOjE3NzkyMzU2NzksIm9yZ19uYW1lIjoia2lkbmV5Z3VhcmRpYW4iLCJpYXQiOjE3NDMyMzU2NzksImp0aSI6ImQ1NjhjMTAzLWQwMGItNDIwZS1hZWUyLWEyMDVlNWRkNTNlNCIsImNsaWVudF9pZCI6ImRUNGR1cHA2ZkREZkhmQTNhYng2MDJzZmZnWWEifQ.rb9F1x5pFtLnldH0OYoqqnCD9zCZq1_lZIVV8pfGIPogpqT1Z6Sc9tcLWIw0ZhbEw0QsM_77Hz32xaiZ2lwu-NlPd3GVzSYe3-8m22e5ejvSg6Ojp4deBWA50nkK_Qv-bovWHXMGB0Vj2cP_-s_KOSOYamDfVxsPyZND_DNQDPJhbcf7BiCOoHmoPwxJllOhpz2QAg11Pne5DvtsWwfj9xSiLAH7WKU_o8lUgrDNoC37MUszbpJVjVd8dQaaMLJPD9i3y5xhau97GKxJgN7REfXKieqRvF5jDjkyQWmSIz6YtYcIhqUcQre6m8diqTxkVQlafGJPsUTX1q_QezSVUA'
         };
 
         try {

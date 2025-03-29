@@ -1,7 +1,7 @@
 {
     "clientID": "AnLblbFLKCboFRjX4vP7AJFam2ga",
-    "baseUrl": "https://api.asgardeo.io/t/kidneystoneprediction",
-    "signInRedirectURL": "https://486f5be5-da7a-4c33-b8f8-3a316187d23f.e1-us-east-azure.choreoapps.dev",
-    "signOutRedirectURL": "https://486f5be5-da7a-4c33-b8f8-3a316187d23f.e1-us-east-azure.choreoapps.dev",
+    "baseUrl": "https://api.asgardeo.io/t/kidneyguardian",
+    "signInRedirectURL": "https://0e900caa-bec3-4eb3-9cef-a9578d685acf.e1-us-east-azure.choreoapps.dev",
+    "signOutRedirectURL": "https://0e900caa-bec3-4eb3-9cef-a9578d685acf.e1-us-east-azure.choreoapps.dev",
     "scope": ["profile email"]
 }
