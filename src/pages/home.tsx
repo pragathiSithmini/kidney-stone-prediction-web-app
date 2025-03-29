@@ -137,6 +137,7 @@ export const HomePage: FunctionComponent = (): ReactElement => {
                             />
                             <button
                                 className="btn primary mt-4"
+                                style={{ backgroundColor: "#4a9fe2fa" }}
                                 onClick={ () => {
                                     handleLogout();
                                 } }
@@ -159,6 +160,7 @@ export const HomePage: FunctionComponent = (): ReactElement => {
                             </h4>
                             <button
                                 className="btn primary"
+                                style={{ backgroundColor: "#4a9fe2fa" }}
                                 onClick={ () => {
                                     handleLogin();
                                 } }
